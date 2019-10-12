@@ -1,0 +1,296 @@
+#cardTable {
+  display: block;
+/*  background-image: url("/cop4813/img/cards/table.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;*/
+  height: 600px;
+  width: auto;
+  position: relative;
+  overflow: auto;
+}
+
+#board {
+   width: auto;
+    border: 1em solid maroon;
+  text-align: center;
+    height: 100%;
+    position: relative;
+    select: none;
+    background: linear-gradient(to right, #176229 0%,#59902f 50%,#176229 100%);
+}
+
+#dropZone1 {
+  display: block;
+  /*border: 2px solid darkorange;*/
+  height: 100px;
+  width: 60px;
+  position: absolute;
+  top: 43.5%;
+  right: 45%;
+}
+
+
+ .hand.is-turn .card { cursor: grabbing; }
+
+
+#stack {
+  display: block;
+  /*border: 2px solid darkslategray;*/
+  background-image: url("/cop4813/img/cards/blue_back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100px;
+  width: 60px;
+  position: absolute;
+  top: 41%;
+  right: 80%;
+  z-index: 10;
+}
+
+#stack.empty { background-image: ... ; }
+
+#player1 {
+  
+  /*min-height: 100px;
+  border: 2px solid red;*/
+  
+  width: 100%;
+  top: 0;
+  
+  position: absolute;
+}
+
+#player2 {
+  position: absolute;
+  bottom: 0;
+  
+  
+  width: 100%;
+  
+  
+  
+  
+ 
+  
+  /*
+  min-height: 100px;
+  
+  text-align: right;
+  position: absolute;
+  bottom: 0px; 
+  right: 50%;
+  /*
+    
+    border: 2px solid blue;
+    width: calc(100% - 200px);
+    
+   margin-left: 200px;
+    */
+}
+
+.dropZone {}
+
+.dragZone {
+  
+}
+
+.dragNDrop {}
+
+div.card {
+  border:1px solid black;
+  border-radius:4px;
+  height:100px;
+  width:60px;
+  display:inline-block;
+}
+
+#penalty-pile{
+  position: absolute;
+  border: 2px solid Red;
+  z-index: 10;
+  width: 80px;
+  height: 120px;
+  top: 40%;
+  right: calc(50% - 40px);
+    
+}
+
+#discard-pile > div.card {
+  position:absolute;
+  z-index: 10;
+}
+div.card[suit='Diamond'] {
+  background:#faa;
+}
+
+div.card[suit='Heart'] {
+  background:#f88;
+
+}
+
+div.card[suit='Spade'] {
+  background:#222;
+  color:#eee;
+}
+
+div.card[suit='Club'] {
+  background:#252;
+  color:#eee;
+}
+
+div.card.drop-placeholder { opacity: 0.5 ; }
+
+div#discard-pile {
+  /*border:2px solid red;  */
+  display:  normal;
+  top: 40%;
+  right: 20%;
+  width: 80px;
+  padding: 5px 10px;
+  height: 110px;
+  overflow: nowrap;
+  position: absolute;
+  text-align:left;
+  z-index; 10; 
+}
+
+.player.player-container::before {
+  float:left;
+  display: inline-block;
+  margin: 0.3rem auto 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: pink;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px, #3F8CFF 0 2px 14px;
+  content: " ";
+}
+
+.player.player-container {
+   width:0px;
+  white-space:nowrap;
+  margin:auto;
+}
+
+.player.player-container:not(.is-turn)::before {
+  background-color: red;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px, #3F8CFF 0 2px 14px;
+}
+
+.player.player-container.is-turn::before {
+  background-color: lightgreen;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+}
+
+.player.player-container::after {
+  display:inline-block;
+  content: "Player " attr(player);
+  color:white;
+  font-size:1.75rem;
+  margin: 0px 1em 0.5rem 1em;
+  font-weight:bold;
+  line-height:1.2;
+}
+
+
+#player1Container{
+  display: block;
+/*  border: 2px solid red;*/  
+}
+#player1Container{
+  display: block;
+  
+}
+#player1-status{
+  display: inline-block;
+  left: 10px;
+}
+#player2-status{
+   display: inline-block;
+  /*vertical-align: top;*/
+  top: 0px;
+}
+#title{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.status-led {
+  display: inline-block;
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: pink;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px, #3F8CFF 0 2px 14px;
+
+}
+
+.player-container.is-turn .status-led{
+  background-color: lightgreen;  
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+}
+  
+
+.player-container:not(.is-turn) .status-led {
+  background-color: red;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px, #3F8CFF 0 2px 14px;
+}
+
+.player-container.game-over .status-led {
+  -webkit-animation: blinkGreen 1s infinite;
+  -moz-animation: blinkGreen 1s infinite;
+  -ms-animation: blinkGreen 1s infinite;
+  -o-animation: blinkGreen 1s infinite;
+  animation: blinkGreen 1s infinite;
+}
+
+
+@-webkit-keyframes blinkGreen {
+    from { background-color: seagreen; }
+    50% { background-color: lightgreen; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, green 0 2px 0; }
+    to { background-color: seagreen; }
+}
+@-moz-keyframes blinkGreen {
+    from { background-color: seagreen; }
+    50% { background-color: lightgreen; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, green 0 2px 0; }
+    to { background-color: seagreen; }
+}
+@-ms-keyframes blinkGreen {
+    from { background-color: seagreen; }
+    50% { background-color: lightgreen; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, green 0 2px 0; }
+    to { background-color: seagreen; }
+}
+@-o-keyframes blinkGreen {
+    from { background-color: seagreen; }
+    50% { backgrgreencolor: lightgreen; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, green 0 2px 0; }
+    to { background-color: seagreen; }
+}
+@keyframes blinkGreen {
+    from { background-color: seagreen; }
+    50% { background-color: lightgreen; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, green 0 2px 0; }
+    to { background-color: seagreen; }
+}
+.done h3{
+  text-decoration: line-through;
+  color: green;
+  
+}
+.toDo{
+  /* b*/order: 2px solid salmon;
+  color: darkslateblue;
+  
+}
+.priority{
+  border: 2px solid salmon;
+  text-decoration-style: bold;
+  color: salmon;
+  
+}
+
+#devel{
+  text-align: right;
+}
