@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#canvasHolder,
+input {}
+
+#whole-page{
+  height 1000px;
+}
+
+#sliders div {
+  display: inline-block;
+  padding: 10px 5px 5px 0px;
+}
+
+button {
+  margin: 10px 5px 0 0;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#draw {
+  background: #419BF9;
+  color: white;
+}
+
+#draw[disabled] {
+  background: #97c8fc;
+  color: white;
+}
+
+input[type=checkbox],
+button {
+  cursor: pointer;
+}
+
+input[type=range] {
+  cursor: ew-resize;
+}
+
+input[type=checkbox][disabled],
+button[disabled],
+input[type=range][disabled] {
+  cursor: not-allowed;
+}
+
+#note {
+  opacity: 0.6;
+  font: 400 11px system-ui;
+}
+
+.wrapper {
+  display: inline-block;
+  position:relative;
+  width: 100%;
+  height: auto;
+  left: 0;
+}
+
+.wrapped {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  
+  left: 0;
+}
+
+#circle {
+  top:50;
+  z-index: 1;
+  background: black;
+}
+
+#spiro {
+  top:50;
+  z-index: 2;
+}
+
+#image {
+  top:50;
+  z-index: 3;
+  display: none;
+}
+
+#turntable {
+  top: 50;
+  background-image: url("/cop4813/img/spironeer.png");
+  background-size: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 4;
+}
+
+#center {}
+
+.rainbow-button {
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius: 5px;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.rainbow-button:after {
+  content: attr(alt);
+  background-color: #191919;
+  justify-content: center;
+}
+
+.rainbow-button:hover {
+  animation: slidebg 2s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position: 20vw;
+  }
+}
+#sliderContainer{
+  position: relative;
+  
+  left:21%;
+  
+}
+#loopTime{
+  position: absolute;
+  z-index: 5;
+  height: 950px;
+  width: 290px;
+  
+}
+input[type=range][id=loopTime] {
+  -webkit-appearance: none;
+  border: none;
+  background-color: transparent;
+  transform: rotatez(90deg);
+}
+
+input[type=range][id=loopTime]:focus {
+  -webkit-appearance: none;
+  outline: none;
+  background-color: transparent;
+  transform: rotatez(90deg);
+  
+}
+
+input[type="range"][id=loopTime]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+    border: none;
+  height: 250px;
+  width: 50px;
+  background-image: url(/cop4813/img/slider.png); 
+  border-radius: 0%;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: rotatez(90deg);  
+  
+}
+

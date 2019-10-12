@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>PuzzleCAPTCHA</title>
+	
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+	<!-- jQuery CDN -->
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+	<!-- PuzzleCAPTCHA Style -->
+	<link rel="stylesheet" href="/cop4813/css/puzzleCAPTCHA.css">
+
+	<!-- PuzzleCAPTCHA Plugin -->
+	<script src="/cop4813/js/puzzleCAPTCHA.js"></script>
+
+
+	<style>
+		/* Styles for the form */
+		form{max-width:400px;margin:0 auto;}
+			.formEmail{border-radius:4px 4px 0 0;}
+			.formPassword{border-radius:0 0 4px 4px;margin-top:-1px;}
+	</style>
+
+	</head>
+	<body>
+
+		<div class="container-fluid">
+      <!--<label class="validationValue">Validation value:</label>-->
+      <input id="puzz" type="text" name="" placeholder="Not Validated" readonly class="validationValue">
+      <br>
+      <label>Please match the bottom tile a.</label>
+      <div id="PuzzleCaptcha"></div>
+      <br>
+    </div>
+
+		<script>
+
+			$("#PuzzleCaptcha").PuzzleCAPTCHA({
+				rows:2,
+				targetInput:'.validationValue',
+				targetVal:'Validated!!',
+				targetButton:'.btnSubmit'
+			});
+
+		</script>
+	</body>
+</html>

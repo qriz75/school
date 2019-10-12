@@ -1,0 +1,102 @@
+#cardTable {
+  display: block;
+  background-image: url("/cop4813/img/cards/table.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 750px;
+  width: auto;
+  position: relative;
+  overflow: auto;
+}
+
+#dropZone1 {
+  display: block;
+  border: 2px solid darkorange;
+  height: 100px;
+  width: 60px;
+  position: absolute;
+  top: 43.5%;
+  right: 45%;
+}
+
+#stack {
+  display: block;
+  border: 2px solid darkslategray;
+  height: 100px;
+  width: 60px;
+  position: absolute;
+  top: 43.5%;
+  right: 70%;
+}
+
+#player1 {
+  display: block;
+  border: 2px solid red;
+  height: 100px;
+  width: 60px;
+  position: absolute;
+  top: 23.5%;
+  right: 45%;
+}
+
+#player2 {
+  display: block;
+  border: 2px solid blue;
+  height: 100px;
+  width: 60px;
+  position: absolute;
+  top: 63.5%;
+  right: 45%;
+}
+
+.dropZone {}
+
+.dragZone {}
+
+.dragNDrop {}
+
+div.card {
+  border:1px solid black;
+  border-radius:4px;
+  height:100px;
+  width:60px;
+  display:inline-block;
+}
+
+div.hand {
+  border:2px solid #eee;
+  margin:1em;
+}
+
+div.card[suit='Diamond'] {
+  background:#faa;
+}
+
+div.card[suit='Heart'] {
+  background:#f88;
+
+}
+
+div.card[suit='Spade'] {
+  background:#222;
+  color:#eee;
+}
+
+div.card[suit='Club'] {
+  background:#252;
+  color:#eee;
+}
+
+div.card.drop-placeholder { opacity: 0.5 ; }
+
+div#discard-pile {
+  border:2px solid red;  
+  display:  normal;
+  top: 40%;
+  right: 10%;
+  width: 80px;
+  height: 110px;
+  overflow: nowrap;
+  position: absolute;
+}

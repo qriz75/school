@@ -1,0 +1,271 @@
+{
+	"ages": [{
+			"age": "No Age",
+			"gbs": [{
+					"gb": "Observatory",
+					"img": "Obs.png",
+					"boosts": ["Guild Goods", "Support Pool"]
+				},
+				{
+					"gb": "Oracle of Delphi",
+					"img": "Oracle.png",
+					"boosts": ["Supplies", "Happiness"]
+				},
+				{
+					"gb": "Temple of Relics",
+					"img": "ToR.png",
+					"boosts": ["Relic Hunt"]
+				}
+			]
+		},
+		{
+			"age": "Bronze Age",
+			"gbs": [{
+					"gb": "Tower of Babel",
+					"img": "ToB.png",
+					"boosts": ["Goods", "Population"]
+				},
+				{
+					"gb": "Statue of Zeus",
+					"img": "Zeus.png",
+					"boosts": ["Military Boost"]
+				}
+			]
+		},
+		{
+			"age": "Iron Age",
+			"gbs": [{
+					"gb": "Colosseum",
+					"img": "Colosseum.png",
+					"boosts": ["Medals", "Happiness"]
+				},
+				{
+					"gb": "Lighthouse of Alexandria",
+					"img": "LoA.png",
+					"boosts": ["Goods", "Supply Boost"]
+				}
+			]
+		},
+		{
+			"age": "Early Middle Ages",
+			"gbs": [{
+					"gb": "Cathedral of Aachen",
+					"img": "CoA.png",
+					"boosts": ["Coins", "Military Boost"]
+				},
+				{
+					"gb": "Hagia Sophia",
+					"img": "HS.png",
+					"boosts": ["Forge Points", "Happiness"]
+				}
+			]
+		},
+		{
+			"age": "High Middle Ages",
+			"gbs": [{
+					"gb": "St. Mark's Basilica",
+					"img": "SMB.png",
+					"boosts": ["Coin Boost", "Goods"]
+				},
+				{
+					"gb": "Notre Dame",
+					"img": "ND.png",
+					"boosts": ["Supplies", "Happiness"]
+				}
+			]
+
+		},
+		{
+			"age": "Late Middle Ages",
+			"gbs": [{
+					"gb": "Saint Basil's Cathedral",
+					"img": "SBC.png",
+					"boosts": ["Coins", "Fierce Resistance", "GvG Support Pool"]
+				},
+				{
+					"gb": "Castle del Monte",
+					"img": "CDM.png",
+					"boosts": ["Forge Points", "Military Boost"]
+				}
+			]
+		},
+		{
+			"age": "Colonial Age",
+			"gbs": [{
+					"gb": "Deal Castle",
+					"img": "DC.png",
+					"boosts": ["Medals", "Fierce Resistance", "GvG Support Pool"]
+				},
+				{
+					"gb": "Frauenkirche of Dresden",
+					"img": "FoD.png",
+					"boosts": ["Goods", "Happiness"]
+				}
+			]
+		},
+		{
+			"age": "Industrial Age",
+			"gbs": [{
+					"gb": "Capitol",
+					"img": "Capitol.png",
+					"boosts": ["Supplies", "Population"]
+				},
+				{
+					"gb": "Royal Albert Hall",
+					"img": "RAH.png",
+					"boosts": ["Goods", "Supply Boost"]
+				}
+			]
+		},
+		{
+			"age": "Progressive Era",
+			"gbs": [{
+					"gb": "Château Frontenac",
+					"img": "CF.png",
+					"boosts": ["Coins", "Quest Reward Boost"]
+				},
+				{
+					"gb": "Alcatraz",
+					"img": "Traz.png",
+					"boosts": ["Military Units", "Happiness"]
+				}
+			]
+		},
+		{
+			"age": "Modern Era",
+			"gbs": [{
+					"gb": "Space Needle",
+					"img": "SN.png",
+					"boosts": ["Coins", "Happiness"]
+				},
+				{
+					"gb": "Atomium",
+					"img": "Atom.png",
+					"boosts": ["Guild Goods", "Happiness"]
+				}
+			]
+		},
+		{
+			"age": "Postmodern Era",
+			"gbs": [{
+					"gb": "Cape Canaveral",
+					"img": "Cape.png",
+					"boosts": ["Forge Ponts"]
+				},
+				{
+					"gb": "The Habitat",
+					"img": "Habitat.png",
+					"boosts": ["Coins", "Population"]
+				}
+			]
+		},
+		{
+			"age": "Contemporary Era",
+			"gbs": [{
+					"gb": "Innovation Tower",
+					"img": "Inno.png",
+					"boosts": ["Forge Points", "Population"]
+				},
+				{
+					"gb": "Lotus Temple",
+					"img": "LT.png",
+					"boosts": ["Coins", "Happiness"]
+				}
+			]
+		},
+		{
+			"age": "Tomorrow Era",
+			"gbs": [{
+					"gb": "Voyager V1",
+					"img": "Voyager.png",
+					"boosts": ["Supplies", "Plunder Goods"]
+				},
+				{
+					"gb": "Dynamic Tower",
+					"img": "DT.png",
+					"boosts": ["Supplies", "Aid Goods"]
+				}
+			]
+		},
+		{
+			"age": "Future Era",
+			"gbs": [{
+					"gb": "Rain Forest Project",
+					"img": "RFP.png",
+					"boosts": ["Goods", "Blueprint Boost"]
+				},
+				{
+					"gb": "The Arc",
+					"img": "Arc.png",
+					"boosts": ["Guild Goods", "Contribution Reward Boost"]
+				}
+			]
+		},
+		{
+			"age": "Arctiv Future",
+			"gbs": [{
+					"gb": "Gaea Statue",
+					"img": "Gaea.png",
+					"boosts": ["Medals", "Happiness"]
+				},
+				{
+					"gb": "Arctic Orangery",
+					"img": "AO.png",
+					"boosts": ["Forge Points", "Critical Hit"]
+				},
+				{
+					"gb": "Seed Vault",
+					"img": "SV.png",
+					"boosts": ["Helping Hands", "Supplies"]
+				}
+			]
+		},
+		{
+			"age": "Oceanic Future",
+			"gbs": [{
+					"gb": "Atlantis Museum",
+					"img": "AM.png",
+					"boosts": ["Goods", "Chance of Double Plunder"]
+				},
+				{
+					"gb": "The Kraken",
+					"img": "Kraken.png",
+					"boosts": ["Forge Points", "Chance of First Strike"]
+				},
+				{
+					"gb": "The Blue Galaxy",
+					"img": "TBG.png",
+					"boosts": ["Medals", "Chance of Double Collection"]
+				}
+			]
+		},
+		{
+			"age": "Virtual Future",
+			"gbs": [{
+					"gb": "Terracotta Army",
+					"img": "TA.png",
+					"boosts": ["Advanced Tactics"]
+				},
+				{
+					"gb": "Himeji Castle",
+					"img": "HC.png",
+					"boosts": ["Supplies", "Spoils of War"]
+				}
+			]
+		},
+		{
+			"age": "Space Age Mars",
+			"gbs": [{
+					"gb": "The Virgo Project",
+					"img": "TVP.png",
+					"boosts": ["Coins", "Missle Launch"]
+				},
+				{
+					"gb": "Star Gazer",
+					"img": "SG.png",
+					"boosts": ["Previous Age Goods"]
+				}
+			]
+		}
+	]
+}

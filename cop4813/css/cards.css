@@ -1,0 +1,215 @@
+#cardTable {
+  display: block;
+/*  background-image: url("/cop4813/img/cards/table.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;*/
+  height: 600px;
+  width: auto;
+  position: relative;
+  overflow: auto;
+}
+
+#board {
+   width: 60%;
+    border: 1em solid maroon;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    background: linear-gradient(to right, #176229 0%,#59902f 50%,#176229 100%);
+}
+
+#dropZone1 {
+  display: block;
+  /*border: 2px solid darkorange;*/
+  height: 100px;
+  width: 60px;
+  position: absolute;
+  top: 43.5%;
+  right: 45%;
+}
+
+.hand.is-turn { background: white; /*opacity: 0.5;*/ }
+
+#stack {
+  display: block;
+  /*border: 2px solid darkslategray;*/
+  background-image: url("/cop4813/img/cards/blue_back.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 100px;
+  width: 60px;
+  position: absolute;
+  top: 41%;
+  right: 70%;
+  z-index: 10;
+}
+
+#player1 {
+  display: block;
+  /*min-height: 100px;
+  border: 2px solid red;*/
+  height: 50%; 
+  position: relative;
+}
+
+#player2 {
+  display: block;
+  height: 50%;
+  vertical-align: bottom;
+  transform: rotate(180deg);
+  position: relative;
+  /*
+  min-height: 100px;
+  
+  text-align: right;
+  position: absolute;
+  bottom: 0px; 
+  right: 50%;
+  /*
+    
+    border: 2px solid blue;
+    width: calc(100% - 200px);
+    
+   margin-left: 200px;
+    */
+}
+
+.dropZone {}
+
+.dragZone {}
+
+.dragNDrop {}
+
+div.card {
+  border:1px solid black;
+  border-radius:4px;
+  height:100px;
+  width:60px;
+  display:inline-block;
+}
+
+#discard-pile > div.card {
+  position:absolute;
+  z-index: 10;
+}
+div.card[suit='Diamond'] {
+  background:#faa;
+}
+
+div.card[suit='Heart'] {
+  background:#f88;
+
+}
+
+div.card[suit='Spade'] {
+  background:#222;
+  color:#eee;
+}
+
+div.card[suit='Club'] {
+  background:#252;
+  color:#eee;
+}
+
+div.card.drop-placeholder { opacity: 0.5 ; }
+
+div#discard-pile {
+  /*border:2px solid red;  */
+  display:  normal;
+  top: 40%;
+  right: 10%;
+  width: 80px;
+  padding: 5px 10px;
+  height: 110px;
+  overflow: nowrap;
+  position: absolute;
+  text-align:left;
+  z-index; 10; 
+}
+#player1Container{
+  display: block;
+/*  border: 2px solid red;*/  
+}
+#player1Container{
+  display: block;
+  
+}
+#player1-status{
+  display: inline-block;
+  left: 10px;
+}
+#player2-status{
+   display: inline-block;
+  /*vertical-align: top;*/
+  top: 0px;
+}
+#title{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.led-gray {
+  display: inline-block;
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: darkgray;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px, #3F8CFF 0 2px 14px;
+}
+
+.led-red {
+  display: inline-block;
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: red;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #006 0 -1px 9px, #3F8CFF 0 2px 14px;
+}
+
+.led-green {
+  display: inline-block;
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: lightgreen;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+  -webkit-animation: blinkGreen 1s infinite;
+  -moz-animation: blinkGreen 1s infinite;
+  -ms-animation: blinkGreen 1s infinite;
+  -o-animation: blinkGreen 1s infinite;
+  animation: blinkGreen 1s infinite;
+}
+
+@-webkit-keyframes blinkGreen {
+    from { background-color: seagreen; }
+    50% { background-color: lightgreen; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, green 0 2px 0; }
+    to { background-color: seagreen; }
+}
+@-moz-keyframes blinkGreen {
+    from { background-color: seagreen; }
+    50% { background-color: lightgreen; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, green 0 2px 0; }
+    to { background-color: seagreen; }
+}
+@-ms-keyframes blinkGreen {
+    from { background-color: seagreen; }
+    50% { background-color: lightgreen; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, green 0 2px 0; }
+    to { background-color: seagreen; }
+}
+@-o-keyframes blinkGreen {
+    from { background-color: seagreen; }
+    50% { backgrgreencolor: lightgreen; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, green 0 2px 0; }
+    to { background-color: seagreen; }
+}
+@keyframes blinkGreen {
+    from { background-color: seagreen; }
+    50% { background-color: lightgreen; box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #808002 0 -1px 9px, green 0 2px 0; }
+    to { background-color: seagreen; }
+}

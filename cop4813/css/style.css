@@ -1,0 +1,99 @@
+body {
+  
+  color: white;
+  min-height: 100vh;
+ 
+  margin: 0;
+}
+
+.navbar{
+  width:100%;
+ 
+}
+
+}
+h1{
+  
+}
+h2{
+  
+}
+h3{
+  
+}
+h4{
+  padding: 10px;
+}
+p{
+  padding 10px;
+  margin: 20px;
+}
+.bottom {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  margin-left: 0px;
+}
+
+.box{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: 30px;
+    background-color: darkgoldenrod;
+    color: #5f5f5f;
+
+}
+#hw {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin-top: 0%;
+    margin-left: 0%;
+    width: 90%;
+    height: 10%;
+}
+.container-fluid{
+ 
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+#top-row{
+ 
+}
+#cen-row{
+  
+}
+#left{
+  background-color: lightslategray; 
+}
+#center{
+ background-color: #5f5f5f;
+  display: inline-block;
+}
+#right{
+  background-color: darkslateblue;
+}
+#bottom-row{
+  position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   display: inline-block;
+  color: lightgray;
+  
+}
+.jumbotron{
+  color: black;
+}
+/* .red{background-color: red}
+.blue{background-color: blue}
+.green{background-color: green}
+.yellow{background-color: yellow} */

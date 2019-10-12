@@ -1,0 +1,27 @@
+#orgModal{
+  background-color: transparent;
+  
+}
+
+iframe{
+  overflow: hidden;
+}
+.circle{
+  width: 100px;
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  text-align: left;
+  font-size: larger;
+  color: goldenrod;
+  
+}
+td {
+  padding: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  vertical-align: top;
+}

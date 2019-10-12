@@ -1,0 +1,14 @@
+html,
+body,
+#map_canvas {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px
+}
+#postal_code{
+  color: red;
+}
+#addressInput{
+  width: 200px;
+}

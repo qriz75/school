@@ -1,0 +1,20 @@
+[
+  ["No Age","Observatory\nGuild Goods\nGvG Support Pool","Oracle of Delphi\nSupplies\nHappiness","Temple of Relics\nRelic Hunt"  ],
+  ["Bronze Age","Tower of Babel\nGoods\nPopulation","Statue of Zeus\nMilitary Boost",""  ],
+  ["Iron Age","Colosseum\nMedals\nHappiness","Lighthouse of Alexandria\nGoods\nSupply Boost",""  ],
+  ["Early Middle Ages","Cathedral of Aachen\nCoins\nMilitary Boost","Hagia Sophia\nForge Points\nHappiness",""  ],
+  ["High Middle Ages","St. Mark's Basilica\nGoods\nCoin Boost","Notre Dame\nSupplies\nHappiness",""  ],
+  ["Late Middle Ages","Saint Basil's Cathedral\nCoins\nFierce Resistance\nGvG Support Pool","Castel del Monte\nForge Points\nMilitary Boost",""  ],
+  ["Colonial Age","Deal Castle\nMedals\nFierce Resistance\nGvG Support Pool","Frauenkirche of Dresden\nGoods\nHappiness",""  ],
+  ["Industrial Age","Capitol\nSupplies\nPopulation","Royal Albert Hall\nGoods\nSupply Boost",""  ],
+  ["Progressive Era","Château Frontenac\nCoins\nQuest Reward Boost","Alcatraz\nMilitary Unit\nHappiness",""  ],
+  ["Modern Era","Space Needle\nCoins\nHappiness","Atomium\nGuild Goods\nHappiness",""  ],
+  ["Postmodern Era","Cape Canaveral\nForge Points","The Habitat\nCoins\nPopulation",""  ],
+  ["Contemporary Era","Innovation Tower\nForge Points\nPopulation","Lotus Temple\nCoins\nHappiness",""  ],
+  ["Tomorrow Era","Voyager V1\nSupplies\nPlunder Goods","Dynamic Tower\nSupplies\nAid Goods",""  ],
+  ["Future Era","Rain Forest Project\nGoods\nBlueprint Boost","The Arc\nGuild Goods\nContribution Rewards",""  ],
+  ["Arctic Future","Gaea Statue\nMedals\nHappiness","Arctic Orangery\nForge Points\nCritical Hit","Seed Vault\nHelping Hands\nSupplies"  ],
+  ["Oceanic Future","Atlantis Museum\nGoods\nChance of Double Plunder","The Kraken\nForge Points\nChance of First Strike","The Blue Galaxy\nMedals\nChance of Double Collection"  ],
+  ["Virtual Future","Terracotta Army\nAdvanced Tactics","Himeji Castle\nSupply Production\nSpoils of War",""  ],
+  ["Space Age Mars","The Virgo Project​\nCoin production\nMissile Launch","Star Gazer\nGoods (Previous Age)",""  ]
+]

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- additional meta tags -->
+	<meta name="description" content="assignment3.html">
+	<meta name="keywords" content="html5,form validation,jquery,bootstrap">
+	<meta name="author" content="Chris K">
+	
+	<!-- Adding CDN scripts -->
+	<!-- jquery CDN -->	
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+	<!-- Bootstrap CDN -->
+	<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- Input mask for automatic phonenumber formatting CDN -->
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.1.60/inputmask/jquery.inputmask.js"></script>
+	
+	<!-- Adding local scripts -->
+	<!-- datepicker script -->
+	<script defer src="/cop4813/js/bootstrap-datepicker.js"></script>
+	<!-- form script -->
+	<script defer src="/cop4813/js/form.js"></script>
+	<!-- captcha script -->
+	<!-- map script -->
+	
+	<!--
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+	<script defer src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+	<!--<script async src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>-->
+  <!--<script async src="/cop4813/js/main.js"></script> -->
+	<!-- Adding CDN styles -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Adding local styles -->
+	<!-- Date picker -->
+	<link rel="stylesheet" href="/cop4813/css/bootstrap-datepicker.css">
+	<link id="bsdp-css" href="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+  
+	<link rel="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.css">
+	<link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/cop4813/css/style.css">
+	<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+	<title>CK Webspace</title>
+<script> $(document).ready(function(){  
+  $("#PhoneNumber").inputmask("(999) 999-9999",{showMaskOnFocus: false, showMaskOnHover: false, clearIncomplete: true});
+});</script>
+</head>
+
+<body class="bg-dark">
+	<!-- Bootstrap Container Start -->
+	<div class="container-fluid" id="whole-page">
+		<!-- Top Row Start -->
+		<div class="row" id="top-row">
+			<!-- Nav-bar Start -->
+			<!-- Just an image -->
+			<nav class="navbar navbar-dark bg-dark">
+				<!-- <div class="container-fluid"> -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/cop4813/index.html">
+              <img src="/cop4813/img/Cop4813.png" class="img-responsive" width="250" alt="COP4813.png">CK Web
+            </a>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Courses
+                </a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="http://roneaglin.online/CEN3722/">CEN3722</a>
+								<a class="dropdown-item" href="http://cop4813eaglin.pbworks.com/w/page/34415594/FrontPage">COP4813</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  Assignments
+                </a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="http://ckweb.space">Assignment 1</a>
+								<a class="dropdown-item" href="http://ckweb.space">Assignment 2</a>
+								<a class="dropdown-item" href="/cop4813/html/assignment3.html">Assignment 3</a>
+								<a class="dropdown-item" href="/cop4813/html/assignment4.html">Assignment 4</a>
+								<a class="dropdown-item" href="/cop4813/html/assignment5.html">Assignment 5</a>
+								<a class="dropdown-item" href="/cop4813/html/assignment6.html">Assignment 6</a>
+								<a class="dropdown-item" href="/cop4813/html/assignment7.html">Assignment 7</a>
+								<a class="dropdown-item" href="/cop4813/html/assignment8.html">Assignment 8</a>
+								<a class="dropdown-item" href="/cop4813/html/assignment9.html">Assignment 9</a>
+								<a class="dropdown-item" href="/cop4813/html/assignment10.html">Assignment 10</a>
+								<a class="dropdown-item" href="/cop4813/html/assignment11.html">Assignment 11</a>
+								<a class="dropdown-item" href="/cop4813/html/assignment12.html">Assignment 12</a>
+								<a class="dropdown-item" href="/cop4813/html/assignment13.html">Assignment 13</a>
+								<a class="dropdown-item" href="/cop4813/html/assignment14.html">Assignment 14</a>
+								<a class="dropdown-item" href="/cop4813/html/assignment15.html">Assignment 15</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--</div>-->
+			</nav>
+			<!-- Nav-bar End -->
+
+			<!-- Top Row End -->
+			<!-- Center Row Start -->
+			<div class="row" id="cen-row">
+				<!-- Left Column Start -->
+				<div class="col" id="left">
+					<div>
+						<h3>
+							Assignment
+						</h3>
+						<p>
+							You are going to create an input form using HTML5 and Javascript. This input form will not submit any database to the server (you learn to do this in COP4834). It will validate and collect information from the user and go to a confirm page that displays
+							the information entered and allows the user to confirm that the information is correct. Below are all the input form fields and the validation required.</p>
+						<p>It is up to you (the designer) how you present the information request. For example in entering a date you can have a single text box, or you can have multiple boxes with drop down choices. You do, however, have to validate the data to make sure
+							it meets all validation rules.</p>
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Field </th>
+										<th>Validation</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Name</td>
+										<td>The user must enter a first and last names. These cannot be blank. You may use a single text box, but must check for 2 names, or use 2 text boxes.</td>
+									</tr>
+									<tr>
+										<td>Address</td>
+										<td>The user must enter a valid mailing address that follows address rules. A city, state, and zip code must also be included as part of the address. You can use multiple text boxes - or a single one. You must still validate all elements.</td>
+									</tr>
+									<tr>
+										<td>Phone Number</td>
+										<td>A full 10 digit phone number must be entered (includes area code). Use an input mask to make the entry easy for the user. Read StackOverflow responses to creation of input masks using jQuery</td>
+									</tr>
+									<tr>
+										<td>Email Address</td>
+										<td>User must enter a correctly formatted email address name@domain.extension -
+										</td>
+									</tr>
+									<tr>
+										<td>Birth Date</td>
+										<td>User must enter a valid birthday, make sure to check format and also date - if dates are unreasonable (like in the future) give a warning.</td>
+									</tr>
+									<tr>
+										<td>Message</td>
+										<td>The user will enter a free text message, you should have a multi-line text entry area for the message</td>
+									</tr>
+									<tr>
+										<td>Confirmation</td>
+										<td>A simple confirmation method to ensure that the fields are not filled out by a machine, you can use a captcha or simple security question (like what is the last name of the current president)</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+
+
+						<p>Once the user enters all this information in the form and hits submit, you will present the information and allow the user to confirm that it is all correct. The user should not be able to enter invalid data or leave fields blank.</p>
+
+						<p>The form will be sent to your email address using the form action="mailto:address" (you can get examples of this at http://www.javascript-coder.com/javascript-form/javascript-email-form.phtml ). This will also make it easy for me to test it - and
+							you will be able to see the results of my testing once I start to grade it.</p>
+
+						<p>You will submit a link to your well designed and functional form. (Your form should incorporate good color choices and formatting to make it pleasant for the user to fill out).</p>
+					</div>
+				</div>
+				<!-- Left Column End -->
+				<!-- Center Column Start -->
+				<div class="col" id="center">
+					<form class="needs-validation" onsubmit="return false" novalidate>
+						<div class="form-row">
+							<div class="col-md-6 mb-2">
+								<label for="firstName">First name: </label>
+								<input type="text" class="form-control" id="FirstName" placeholder="First name" required>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+							</div>
+							<div class="col-md-6 mb-2">
+								<label for="lastName">Last name: </label>
+								<input type="text" class="form-control" id="LastName" placeholder="Last name" required>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col-md-6 mb-3">
+								<label for="phoneNumber">Phone Number:</label>
+								<input type="phone" class="form-control" id="PhoneNumber" minlength="14" data-inputmask-clearmaskonlostfocus="true" data-inputmask="'mask': '(999) 999-9999'" placeholder="Phone Number" required>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="emailAddress">Email Address: </label>
+								<input type="text" class="form-control" id="Email" pattern="^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$" placeholder="Email" required>
+								<div class="valid-feedback">
+									Looks good!
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col-md-12 mb-3">
+								<label for="validationCustom05">Address (Best to start typing and then select): </label><br/>
+								<iframe id="add_ifr"  class="col-lg-12 col-md-12 col-sm-12" form-control height="300px" src="/cop4813/html/map-example.html"></iframe>								
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<!--<form method="post">-->
+										<div class="form-group ">
+												<label class="control-label " for="date">Birth Date (type or pick): </label><br>
+											<input class="n2bf" class="form-control" pattern="^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[13-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$" id="datepicker" data-date="12/03/2012" type="text" required>	
+											<div class="valid-feedback">
+									Looks good!
+								</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-12">
+										<!--<form method="post">-->
+										<div class="form-group ">
+												<label class="control-label " for="puzzle">Checking if you are human: </label>
+											<iframe id="captcha_ifr"  class="col-lg-12 col-md-12 col-sm-12" height="350px" src="/cop4813/html/puzzle-captcha.html"></iframe>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col-md-12 col-sm-4 md-3">
+								<label for="validationCustom05">Message (can't be empty): </label><br/>
+								<textarea id="textarea" name="textarea" cols="12" rows="5" class="form-control" required="required"></textarea>
+							</div>
+						</div>
+							
+								<div class="form-check">
+									<!-- <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required> -->
+									<label class="form-check-label" for="invalidCheck">Click the button to validate the fields and send your entries to the email form.</label>
+									<div class="invalid-feedback">
+										You must agree before submitting.
+									</div>	
+									<button class="btn btn-primary" onclick="popForm()" onsubmit="return false" type="submit">Send to email form</button>
+								</div>
+					</form>
+				</div>
+
+						<!-- Center Column End -->
+						<!-- Right Column Start -->
+						<div class="col" id="right">
+							<h2>
+								Your submission:
+							</h2>
+							<div class="container-fluid">
+								
+
+									<div class="jumbotron">									
+										<div class="form-row">
+											<div class="col-md-6 mb-2">
+												<table>
+													<tr><th>Field</th><th>Input</th></tr>
+													<tr><td>Name: </td><td><label id="fn"></label>  <label id="ln"></label></td></tr>
+													<tr><td>Phone Number: </td><td><label id="pn"></label></td></tr>
+													<tr><td>Email: </td><td><label id="ea"></label></td></tr>
+													<tr><td>Address: </td><td><label id="add"></label> <label id="zip"></label></td></tr>
+													<tr><td>Birthday: </td><td><label id="bd"></label></td></tr>
+													<tr><td>Validation status: </td><td><label id="captcha"></label></td></tr>	
+													<tr><td>Message: </td><td><label id="message"></label></td></tr>
+																						
+												</table>
+											</div>
+										</div>
+										<form id="mailOut" method="post" action="/cgi-bin/FormMail.pl">
+									<!-- <input type="hidden" name="recipient" value=" info@ckweb.space"> -->
+									<!-- <input type="hidden"  name="subject" value="Form submission"  >
+									<input type="hidden"  name="return_link_url" value="http:ckweb.space" >-->
+											<div class="cbe"><input type="hidden" id="fn2" name="First Name: "   required></div>
+											<div class="cbe"><input type="hidden" name="Last Name: " id="ln2"  required></div><br>
+											<div class="cbe"><input type="hidden" name="Phone Number: " id="pn2"  required></div>
+											<div class="cbe"><input type="hidden" name="Email: " id="ea2"  required></div>
+											<div class="cbe"><input type="hidden" name="Address: " id="add2"  required></div>
+											<div class="cbe"><input type="hidden" name="Zip Code: " id="zip2"  required></div>
+											<div class="cbe"><input type="hidden" name="Birthday: " id="bd2"  required></div>
+											<div class="cbe"><input type="hidden" name="Validationstatus: " id="captcha2"  required></div>
+											<div class="cbe"><input type="hidden" name="Message: " id="message2"  required></div><br>												
+											<label style=color:red >Will only submit when all input is entered !!!</label>
+									<button class="btn btn-primary" onclick="check4empty();" id="sendMail" type="button" name="sendMail">Send Email</button>
+								</form>
+									
+								</div>
+							</div>	
+						</div>
+						<!-- Right Column End -->
+				</div>
+				<!-- Center Row End -->
+				<!-- Bottom Row Start -->
+				<div class="row" id="bottom-row">
+
+				</div>
+				<!-- Bottom Row End -->
+			</div>
+			<div class="footer-copyright text-center py-3">Created by Chris Kruger in 2019.
+
+			</div>
+		</div>
+		<!-- Bootstrap Container End -->
+	
+</body>
+
+</html>
