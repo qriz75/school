@@ -1,5 +1,8 @@
 //loads the javascript when the page opens
 $(document).ready(function() {  
+	//global variables
+	var last;
+	
 //creating the deck of cards  
 function makeDeck() {
   //variables for the cards
@@ -47,6 +50,7 @@ var playerTurn = 0;
 
 function outOfCards()
 {
+	$("#stack").addClass("empty")
 	throw new Error("todo:shuffle discard pile back in to the draw pile");
 }
 
@@ -65,22 +69,53 @@ function newGame()
 }
 
 function drawCard( )
-{
-	var card;
-
-	if (!deck.length)
-		return outOfCards();
-
-	card = cardVisual(deck.pop());
-	return card;
+	{
+		var card;
+		var count;
+		if (!deck.length){ 			
+			return outOfCards();
+		}else if(count ==0){
+			card = cardVisual(deck.pop());			
+			count +1;
+		}else if(count==1){
+			setPlayerTurn();
+			count -1;
+		}
+		card = cardVisual(deck.pop());			
+			count =1;
+		
+		
+		return card;
 }
 
+/*function discardCard( card ){
+	var discards = $("#discard-pile");
+	
+	
+	if ($(ui.item).attr("suit") != last.attr("suit")&&$(ui.item).attr("numeral") != last.attr("numeral")
+		 ){
+		$(card).appendTo(discards);
+		setPlayerTurn();
+	} else if( $(ui.item).attr("numeral") == 7 ){
+		throw new Error("todo: implement draw 2 ");
+	} else if( $(ui.item).attr("numeral") == 8 ){
+		throw new Error("skip next player ");
+	} else if( $(ui.item).attr("numeral") == 9 ){
+		throw new Error("todo: change direction ");
+	} else if( $(ui.item).attr("numeral") == "J" ){
+		throw new Error("todo: choose suit ");
+	} else if( $(ui.item).attr("numeral") == "A" ){
+		throw new Error("todo: drop another ");
+	} else {
+		alert("something weird just happened !!!")
+	}
+	
+}*/
 function discardCard( card ){
 	var discards = $("#discard-pile");
 	$(card).appendTo(discards);
 	setPlayerTurn();
 }
-
 
 function setPlayerTurn( n )
 {
@@ -88,21 +123,31 @@ function setPlayerTurn( n )
 		playerTurn = (playerTurn + 1 ) % players.length;
 	else playerTurn = n % players.length;
 
-	var activePlayer = $("#"+players[playerTurn]).addClass("is-turn");
-	$(".is-turn").not("#"+players[playerTurn]).removeClass("is-turn");
+  $(".is-turn").removeClass("is-turn");
+  $("#"+players[playerTurn]+"Container,.player.player-container[player="+(playerTurn+1)+"]").addClass("is-turn");
+	$("#"+players[playerTurn]).addClass("is-turn");
 }
 
 
 function initializeGameUI() {
 	$("#reset-game").click( newGame ).click();
-	$("#board").on("click", ".hand .card", function() {
+	//alert("test");
+	/* $("#board").on("click", ".hand .card", function() {
 		discardCard(this);
 		event.preventDefault();
 	});
-
+*/
 	players.forEach(function(id) {
 		var hand = $("#"+id);
-		hand.sortable({ connectWith: "#discard-pile", helper: "clone", revert: true, tolerance: "pointer" });
+		hand.sortable({ connectWith: "#discard-pile", helper: "clone", revert: true, tolerance: "intersect", receive: function(event, ui){
+			if (ui.item.is(".card-placeholder")) {
+				ui.sender.sortable("cancel");
+				if ($(this).is(".is-turn")){
+					drawCard().appendTo( $( this) );
+				}
+			}
+				
+		} });
 
 	});
 
@@ -110,31 +155,55 @@ function initializeGameUI() {
 		connectWith: ".hand",
 		helper: "clone",
 		revert: true,
-		tolerance: "pointer",
+		tolerance: "intersect",
 		receive: function(event, ui) {
-			var last = $("#discard-pile > .card").not(ui.item).last();
+			 last = $("#discard-pile > .card").not(ui.item).last();
 
-console.log("Discard pile receive: ", ui.item.attr("suit"), ui.item.attr("numeral"));
+console.log("Discard pile receive by: ", ui.item.attr("suit"), ui.item.attr("numeral"));
 console.log("Discard pile face card: ", last.attr("suit"), last.attr("numeral"));
 
-			if (
-				$(ui.item).attr("suit") != last.attr("suit")
-				&& 
-				$(ui.item).attr("numeral") != last.attr("numeral")
+			if ($(ui.item).attr("suit") != last.attr("suit")	&& $(ui.item).attr("numeral") != last.attr("numeral") && $(ui.item).attr("numeral") != "J"
 			)
-			{
-				ui.sender.sortable("cancel");
-				console.log("No match", ui, ui.sender);
+			{	ui.sender.sortable("cancel");
+			 alert("You have to either match the suit or the value to drop a card !", ui, ui.sender);
 				return;
+			}else if( $(ui.item).attr("numeral") == 7 ){
+				discardCard(ui.item);
+				drawCard().appendTo( $( "#penalty-pile") );				
+				drawCard().appendTo( $( "#penalty-pile") );
+				setPlayerTurn();	
+				
+			} else if( $(ui.item).attr("numeral") == 8 ){				
+				discardCard(ui.item);
+				alert("Next Player is skipped");				
+			} else if( $(ui.item).attr("numeral") == 9 ){				
+				discardCard(ui.item);
+				setPlayerTurn();
+				//throw new Error("todo: change direction ");
+			} else if( $(ui.item).attr("numeral") == "J" ){				
+				discardCard(ui.item);
+				setPlayerTurn();
+				//throw new Error("todo: choose suit ");
+			} else if( $(ui.item).attr("numeral") == "A" ){					
+				discardCard(ui.item);
+				alert("You can drop another card");
+				
+			
+				
 			}
 			discardCard(ui.item);
-		},
+			
+			
+		},	
 	});
 
 	//here is the handler for the deal button and a pop function to remove the dealt cards from the deck
-	$("#stack").on("click", function(){
+	/*$("#stack").on("click", function(){
 		drawCard().appendTo( $( "#"+players[playerTurn%players.length]+".hand") );
-	})
+		
+	})*/
+	
+	$("#stack").sortable({ connectWith: ".hand", revert: true});
 
 
 	setPlayerTurn(0);

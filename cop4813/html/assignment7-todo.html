@@ -9,164 +9,167 @@
   <meta name="description" content="assignment8.html">
   <meta name="keywords" content="html5,form validation,jquery,bootstrap">
   <meta name="author" content="Chris K">
-  <link rel="stylesheet" href="/cop4813/css/cards-5.css">
+  <link rel="stylesheet" href="/cop4813/css/cards.css">
   <link rel="stylesheet" href="/cop4813/css/style.css">
-  </head>
-  <body>
-    
+</head>
+
+<body>
+  <h2>
+    Missing Features or Functions (prioritized by color)
+  </h2>
+  <div id="legend">
+    <div class="done" id="done">Done</div>
+    <div class="priority" id="priority">Prioritized</div>
+    <div class="toDo" id="ToDo">To-Do Items</div>
+  </div>
+  <br><br><br><br>
+  <hr><h4>
+    Known bugs:
+  </h4>
   
-Missing Features or Functions (prioritized by color)
 
-<div class="done"><h3>
-   - Turn indicator lights (next to name) instead of the large white box
-  </h3>
- </div>
- <div class="priority"><h3>
-   - remove draggability from discard pile </h3>
-   
-<div class="priority"><h3>
-   - Drag and click functions need to do the same
-  </h3>
- 
-</div>
-<div class="toDo"><h3>
-  - drag and drop cursors
-  </h3>
-  
-</div>
-<div class="priority"><h3>
-   - card should only become "grabbable if the suit or value matches or if it is a jack 
-  </h3>
- 
-</div>
- <div class="priority"><h3>
-  - Player 1 should not be allowed to add to player 2's hand
-  </h3>
-   
-</div>
- <div class="done"><h3>
-  - transform rotation for player 2 backfired for drag and drop
-  </h3>
-   
-</div>
- <div class="done"><h3>
-  - manual turn switch (if player choses to skip) - this would have been against the rules
-  </h3>
-   
-</div>
- <div class="priority"><h3>
-  - the hand of a waiting player should not be touchable
-  </h3>
-   
-</div>
- <div class="done"><h3>
-   - drawing from the deck should change the turn
-  </h3>
-  
-</div>
- <div class="toDo"><h3>
-  - drawing how many cards needs to change if the card in the pile is a 7 (or series of 7s)
-  </h3>
-   
-</div>
- <div class="toDo"><h3>
-    - A suit selector needs to appear when a Jack was placed 
-  </h3>
- 
-</div>
- <div class="toDo"><h3>
-    - the deck background needs to change to a button after last card is dealt. when clicking that button the cards in the discard-pile will be shuffeled and added back to the deck.
-  </h3>
- 
-</div>
- 
-----------------------------------------------------
-Rule Implementations:
-<div class="toDo"><h3>
-  Cards can be dropped only if it is your turn
-  </h3><h3>
-  
-  </h3>
-   
-</div>
+  <div class="done">
+    <h3>
+      - Turn indicator lights (next to name) instead of the large white box
+    </h3>
+  </div>
+  <div class="priority">
+    <h3>
+      - remove draggability from discard pile </h3>
+  </div>
+    <div class="done">
+      <h3>
+        - Drag and click functions need to do the same - removed click function altogether
+      </h3>
+    </div>
+    <div class="toDo">
+      <h3>
+        - drag and drop cursors
+      </h3>
+    </div>
+    <div class="done">
+      <h3>
+        - card should only become "grabbable" if the suit or value matches or if it is a jack
+      </h3>
+    </div>
+    <div class="done">
+      <h3>
+        - Player 1 should not be allowed to add to player 2's hand
+      </h3>
+    </div>
+    <div class="done">
+      <h3>
+        - transform rotation for player 2 backfired for drag and drop
+      </h3>
+    </div>
+    <div class="done">
+      <h3>
+        - manual turn switch (if player choses to skip) - scrapped this would have been against the rules
+      </h3>
+    </div>
+    <div class="done">
+      <h3>
+        - the hand of a waiting player should not be touchable
+      </h3>
+    </div>
+    <div class="done">
+      <h3>
+        - drawing from the deck should change the turn
+      </h3>
+    </div>
+    <div class="toDo">
+      <h3>
+        - drawing how many cards needs to change if the card in the pile is a 7 (or series of 7s) - progress made but not complete yet.
+      </h3>
+    </div>
+    <div class="toDo">
+      <h3>
+        - A suit selector needs to appear when a Jack was placed
+      </h3>
+    </div>
+    <div class="toDo">
+      <h3>
+        - the deck background needs to change to a button after last card is dealt. when clicking that button the cards in the discard-pile will be shuffeled and added back to the deck.
+      </h3>
+    </div>
+  <hr> <h4>
+  Rule Implementations:
+  </h4>
+  <div class="done">
+    <h3>
+      Cards can be dropped only if it is your turn
+    </h3>
+  </div>
+  <div class="toDo">
+    <h3>
+      cards need to either match the suit or the value in order to be dropped ... only exception is Jack
+    </h3>    
+  </div>
+  <hr>
+  <h4>
+    Special Cards:
+  </h4>
+  <div class="toDo">
+    <h3>
+      #7 - draws 2 unless you can counter with another 7 then your 2 plus 2 will be drawn by the next player if it happens that all four 7s were in play the player that cannot provide another 7 will draw 8 cards - partially working
+    </h3>    
+  </div>
+    <div class="done">
+      <h3>
+        #8 - the next player will be skipped
+      </h3>
+    </div>
+    <div class="toDo">
+      <h3>
+        #9 - the turn rotation is reversed (not applicable for 2 players)
+      </h3>
+    </div>
+    <div class="toDo">
+      <h3>
+        #Jack - The player that lays down a Jack can pick the suit the need to be played next - No Jack can be placed on another Jack
+      </h3>
+    </div>
+    <div class="done">
+      <h3>
+        #Ace - The player that lays down an Ace can place another card that fits the current suit - multiple Aces can be played
+      </h3>
+    </div>
+    <div class="priority">
+      <h3>
+        If a player has only one card left he needs to call "Mau" - if he forgets and another player points it out he has to draw a card. This could be done with a simple set of buttons (one to call and one to point out)
+      </h3>
+    </div>
+    <div class="priority">
+      <h3>
+        the Game needs to end when a player has no cards left and calls "Mau Mau" (double-click on the button above)
+      </h3>
+    </div>
+    <hr><h4>
+  Design Improvements: - General Responsiveness
+  </h4>
 
-<div class="toDo"><h3>
-  cards need to either match the suit or the value in order to be dropped ... only exception is Jack
-  </h3>
-   
-</div>
-Special Cards:
-<div class="toDo"><h3>
-  #7 - draw 2 unless you can counter with another 7 then your 2 plus 2 will be drawn by the next player if it happens that all 4 7s were in play the player that cannot provide another 7 will draw 8 cards
-  </h3>
-   
-</div>
-
-
-
-<div class="toDo"><h3>
-  #8 - the next player will be skipped
-  </h3>
-   
-</div>
-
-<div class="toDo"><h3>
-  #9 - the turn rotation is reversed (not applicable for 2 players)
-  </h3>
-   
-</div>
-
-<div class="toDo"><h3>
-  #Jack - The player that lays down a Jack can pick the suit the need to be played next - No Jack can be placed on another Jack
-  </h3>
-   
-</div>
-
-<div class="toDo"><h3>
-  #Ace - The player that lays down an Ace can place another card that fits the current suit - multiple Aces can be played
-  </h3>
-   
-</div>
-
-<div class="toDo"><h3>
-  If a player has only one card left he needs to call "Mau" - if he forgets and another player points it out he has to draw a card. This could be done with a simple set of buttons (one to call and one to point out)
-  </h3>
-   
-</div>
-
-<div class="toDo"><h3>
-  the Game needs to end when a player has no cards left and calls "Mau Mau" (double-click on the button above)
-  </h3>
-   
-</div>
-
-
-------------------------------------------------
-Design Improvements:
-
-- General Responsiveness
-  
- <div class="done"><h3>
-  - Modals don't scale
-  </h3>
-   
-</div>
-
-<div class="toDo"><h3>
-   - Drag and drop for Mobile
-  </h3>
-  
-</div>
-----------------------------------------------------
-
-AI Implementations
+    <div class="done">
+      <h3>
+        - Modals don't scale
+      </h3>
+    </div>
+    <div class="toDo">
+      <h3>
+        - Drag and drop for Mobile
+      </h3>
+    </div>
+    <hr> <h4>
+  AI Implementations
+  </h4>
 
 
-<div class="toDo"><h3>
-  - Player 1 needs to be a computer 
-  </h3>
+    <div class="toDo">
+      <h3>
+        - Player 1 needs to be a computer
+      </h3>
 
-  </body>
+</body>
+
 </html>
-   
+
 </div>
