@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -12,7 +11,6 @@
   <link rel="stylesheet" href="/cop4813/css/cards.css">
   <link rel="stylesheet" href="/cop4813/css/style.css">
 </head>
-
 <body>
   <h2>
     Missing Features or Functions (prioritized by color)
@@ -23,11 +21,10 @@
     <div class="toDo" id="ToDo">To-Do Items</div>
   </div>
   <br><br><br><br>
+  <!-- Bugs -->
   <hr><h4>
     Known bugs:
   </h4>
-  
-
   <div class="done">
     <h3>
       - Turn indicator lights (next to name) instead of the large white box
@@ -41,12 +38,7 @@
       <h3>
         - Drag and click functions need to do the same - removed click function altogether
       </h3>
-    </div>
-    <div class="toDo">
-      <h3>
-        - drag and drop cursors
-      </h3>
-    </div>
+    </div>    
     <div class="done">
       <h3>
         - card should only become "grabbable" if the suit or value matches or if it is a jack
@@ -64,37 +56,43 @@
     </div>
     <div class="done">
       <h3>
-        - manual turn switch (if player choses to skip) - scrapped this would have been against the rules
+        - manual turn switch (if player choses to skip) - scrapped ... this would have been against the rules
       </h3>
     </div>
     <div class="done">
       <h3>
         - the hand of a waiting player should not be touchable
       </h3>
-    </div>
-    <div class="done">
+    </div>    
+  <!-- Rule Implementations -->
+  <hr> <h4>
+  Rule Implementations:
+  </h4>
+  <div class="priority">
       <h3>
-        - drawing from the deck should change the turn
+        If a player has only one card left he needs to call "Mau" - if he forgets and another player points it out he has to draw a card. This could be done with a simple set of buttons (one to call and one to point out)
       </h3>
     </div>
-    <div class="toDo">
+    <div class="priority">
       <h3>
-        - drawing how many cards needs to change if the card in the pile is a 7 (or series of 7s) - progress made but not complete yet.
+        the Game needs to end when a player has no cards left and calls "Mau Mau" (double-click on the button above)
       </h3>
     </div>
-    <div class="toDo">
+  <div class="priority">
       <h3>
-        - A suit selector needs to appear when a Jack was placed
+        - drawing from the deck should change the turn | revisiting to enable drop the card that was just drawn.
       </h3>
-    </div>
-    <div class="toDo">
+    </div>  
+  <div class="toDo">
       <h3>
         - the deck background needs to change to a button after last card is dealt. when clicking that button the cards in the discard-pile will be shuffeled and added back to the deck.
       </h3>
     </div>
-  <hr> <h4>
-  Rule Implementations:
-  </h4>
+  <div class="toDo">
+      <h3>
+        - drawing how many cards needs to change if the card in the pile is a 7 (or series of 7s) - progress made but not complete yet - penalty pile was added but the cards need to be distributed after draw.
+      </h3>
+    </div>
   <div class="done">
     <h3>
       Cards can be dropped only if it is your turn
@@ -108,7 +106,7 @@
   <hr>
   <h4>
     Special Cards:
-  </h4>
+  </h4>  
   <div class="toDo">
     <h3>
       #7 - draws 2 unless you can counter with another 7 then your 2 plus 2 will be drawn by the next player if it happens that all four 7s were in play the player that cannot provide another 7 will draw 8 cards - partially working
@@ -133,21 +131,16 @@
       <h3>
         #Ace - The player that lays down an Ace can place another card that fits the current suit - multiple Aces can be played
       </h3>
-    </div>
-    <div class="priority">
-      <h3>
-        If a player has only one card left he needs to call "Mau" - if he forgets and another player points it out he has to draw a card. This could be done with a simple set of buttons (one to call and one to point out)
-      </h3>
-    </div>
-    <div class="priority">
-      <h3>
-        the Game needs to end when a player has no cards left and calls "Mau Mau" (double-click on the button above)
-      </h3>
-    </div>
+    </div>    
+  <!-- UI/UX Enhancements -->
     <hr><h4>
   Design Improvements: - General Responsiveness
   </h4>
-
+    <div class="toDo">
+      <h3>
+        - drag and drop cursors 
+      </h3>
+    </div>
     <div class="done">
       <h3>
         - Modals don't scale
@@ -158,18 +151,14 @@
         - Drag and drop for Mobile
       </h3>
     </div>
+  <!-- AI -->
     <hr> <h4>
   AI Implementations
   </h4>
-
-
     <div class="toDo">
       <h3>
         - Player 1 needs to be a computer
       </h3>
-
+  </div>
 </body>
-
 </html>
-
-</div>

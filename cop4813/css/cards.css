@@ -307,11 +307,13 @@ div#penalty-pile {
 .done {
   text-decoration: line-through;
   color: green;
+  text-decoration-style: bold;
   
 }
 .toDo {
   /* b*/order: 2px solid salmon;
   color: darkslateblue;
+  text-decoration-style: bold;
   
 }
 .priority {
