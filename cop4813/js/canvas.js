@@ -18,6 +18,7 @@ $(document).ready(function() {
     cy: undefined
   }
   // global variables 
+  var hoveredCircle = null;
   var maxRadius = 100;
   var minRadius = 10;
   var colorArray = [
@@ -52,6 +53,10 @@ $(document).ready(function() {
     click.cx = event.x;
     click.cy = event.y;
     console.log(click.cx, " | ", event.x, " | ", click.cy, " | ", event.y)
+    
+    var which;
+    if ((which = circleArray.indexOf(hoveredCircle)) != -1)
+      circleArray.splice(which, 1);
   })
   //Circle object
   function Circle(x, y, dx, dy, radius, cid) {
@@ -100,15 +105,18 @@ $(document).ready(function() {
       //interactivity for hovers
       // these if statements enlarge the circles to a pre-determined max size when they come in contact with the mouse
       if (mouse.mx - this.x < 50 && mouse.mx - this.x > -50 && mouse.my - this.y < 50 && mouse.my - this.y > -50) {
+        hoveredCircle = this;
         if (this.radius < maxRadius) {
           this.radius += 1;
           //console.log('hover increased | ', this.x, "x", "& ", this.y, "y")
         }
       } else if (this.radius > minRadius) {
+        if (hoveredCircle == this)
+          hoveredCircle = null;
         this.radius -= 1;
         //console.log('mouse left decrease')
       } else if (click.cx == this.x || click.cy == this.y) {
-        this.cid = "clicked";
+        //this.cid = "clicked";
       }
       //calling the draw function from above
       this.draw();
@@ -119,7 +127,7 @@ $(document).ready(function() {
 
   // an array to hold the circles
   var circleArray = [];
-  var count = 5;
+  var count = 100;
 
   //an initialzation function
   function init() {
