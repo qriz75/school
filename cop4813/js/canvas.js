@@ -2,7 +2,7 @@
 $(document).ready(function() {
   //canvas variable
   var canvas = document.querySelector('canvas');
-  //setting the canvas tu use up all the screenspace
+  //setting the canvas tu use up all the screen space
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   //shortcut variable to reduce typing
@@ -18,9 +18,19 @@ $(document).ready(function() {
     cy: undefined
   }
   // global variables 
+  
+  // an array to hold the circles
+  var circleArray = [];
+  // how many circles
+  var count = 100;
+  //how many circles spawn on misclick
+  var penCount = 5;
+  //marking the circle to be removed
   var hoveredCircle = null;
+  //controlling size of the circles
   var maxRadius = 100;
   var minRadius = 10;
+  //a palette of colors for the circles
   var colorArray = [
     '#000000',
     '#FF0000',
@@ -52,16 +62,18 @@ $(document).ready(function() {
   window.addEventListener('click', function(event) {
     click.cx = event.x;
     click.cy = event.y;
-    console.log(click.cx, " | ", event.x, " | ", click.cy, " | ", event.y)
-    
+    //console.log(click.cx, " | ", event.x, " | ", click.cy, " | ", event.y)
+    //which circle
     var which;
     if ((which = circleArray.indexOf(hoveredCircle)) != -1)
       circleArray.splice(which, 1);
+    else {
+      //console.log('missed');
+      penalty();
+    }
   })
   //Circle object
-  function Circle(x, y, dx, dy, radius, cid) {
-    //Identifier
-    this.cid = cid;
+  function Circle(x, y, dx, dy, radius) {   
     //coordinates
     this.x = x;
     this.y = y;
@@ -122,14 +134,8 @@ $(document).ready(function() {
       this.draw();
     }
   }
-
-
-
-  // an array to hold the circles
-  var circleArray = [];
-  var count = 100;
-
-  //an initialzation function
+  
+  //the initialzation function
   function init() {
     //making sure we start with an empty arry when we call the function again
     circleArray = [];
@@ -143,9 +149,29 @@ $(document).ready(function() {
       var dy = (Math.random() - 0.5) * 10;
       var cid = i;
       //pushing circles into the array
-      circleArray.push(new Circle(x, y, dx, dy, radius, cid));
+      circleArray.push(new Circle(x, y, dx, dy, radius));
     }
   }
+  //this function adds more circles to the canvas when the user mis-clicks
+  function penalty() {
+
+    
+
+    //looping through the array
+    for (var i = 0; i < penCount; i++) {
+      
+      //the  variables needed to generate random circles
+var radius = 30;
+var x = Math.random() * (innerWidth - radius * 2) + radius;
+var y = Math.random() * (innerHeight - radius * 2) + radius;
+var dx = (Math.random() - 0.5) * 10;
+var dy = (Math.random() - 0.5) * 10;
+      
+      //pushing circles into the array
+      circleArray.push(new Circle(x, y, dx, dy, radius));
+    }
+  }
+  
   //this function moves the circles
   function animate() {
     requestAnimationFrame(animate);
