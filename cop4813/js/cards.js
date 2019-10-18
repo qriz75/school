@@ -9,7 +9,7 @@ function makeDeck() {
 	var deck = []; //array to hold the cards
 	var suits = ["Heart", "Club", "Diamond", "Spade"]; //array for the suits
 	var numerals = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"]; //array to hold the card values
-  var imgPath = '/cop4813/img/cards/'; // holds the image path
+  var imgPath = './img/cards/'; // holds the image path
   
 // a nested for loop creates each combination of suit and value one time (52 cards)
 	for (let suit = 0; suit < suits.length; suit++)
