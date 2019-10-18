@@ -11,8 +11,8 @@
   <meta name="author" content="Chris K">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/butterfly.css"
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/butterfly.css"
   <title>CK Webspace</title> 
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-json/2.6.0/jquery.json.min.js"></script>
   <script defer src="https://unpkg.com/d3@3/d3.min.js"></script>
@@ -20,7 +20,7 @@
   <script defer src="https://code.highcharts.com/highcharts.js"></script>
   <script defer src="https://code.highcharts.com/modules/exporting.js"></script>
  
-  <script defer src="./js/calculator.js"></script>
+  <script defer src="../js/calculator.js"></script>
   
 </head>
 
@@ -34,8 +34,8 @@
       <nav class="navbar navbar-dark bg-dark">
         <!-- <div class="container-fluid"> -->
         <div class="navbar-header">
-          <a class="navbar-brand" href="./index.html">
-              <img src="./img/Cop4813.png" class="img-responsive" width="250" alt="COP4813.png">CK Web
+          <a class="navbar-brand" href="../index.html">
+              <img src="../img/Cop4813.png" class="img-responsive" width="250" alt="COP4813.png">CK Web
             </a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
@@ -61,19 +61,19 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="http://ckweb.space">Assignment 1</a>
                 <a class="dropdown-item" href="http://ckweb.space">Assignment 2</a>
-                <a class="dropdown-item" href="./html/assignment3.html">Assignment 3</a>
-                <a class="dropdown-item" href="./html/assignment4.html">Assignment 4</a>
-                <a class="dropdown-item" href="./html/assignment5.html">Assignment 5</a>
-                <a class="dropdown-item" href="./html/assignment6.html">Assignment 6</a>
-                <a class="dropdown-item" href="./html/assignment7.html">Assignment 7</a>
-                <a class="dropdown-item" href="./html/assignment8.html">Assignment 8</a>
-                <a class="dropdown-item" href="./html/assignment9.html">Assignment 9</a>
-                <a class="dropdown-item" href="./html/assignment10.html">Assignment 10</a>
-                <a class="dropdown-item" href="./html/assignment11.html">Assignment 11</a>
-                <a class="dropdown-item" href="./html/assignment12.html">Assignment 12</a>
-                <a class="dropdown-item" href="./html/assignment13.html">Assignment 13</a>
-                <a class="dropdown-item" href="./html/assignment14.html">Assignment 14</a>
-                <a class="dropdown-item" href="./html/assignment15.html">Assignment 15</a>
+                <a class="dropdown-item" href="../html/assignment3.html">Assignment 3</a>
+                <a class="dropdown-item" href="../html/assignment4.html">Assignment 4</a>
+                <a class="dropdown-item" href="../html/assignment5.html">Assignment 5</a>
+                <a class="dropdown-item" href="../html/assignment6.html">Assignment 6</a>
+                <a class="dropdown-item" href="../html/assignment7.html">Assignment 7</a>
+                <a class="dropdown-item" href="../html/assignment8.html">Assignment 8</a>
+                <a class="dropdown-item" href="../html/assignment9.html">Assignment 9</a>
+                <a class="dropdown-item" href="../html/assignment10.html">Assignment 10</a>
+                <a class="dropdown-item" href="../html/assignment11.html">Assignment 11</a>
+                <a class="dropdown-item" href="../html/assignment12.html">Assignment 12</a>
+                <a class="dropdown-item" href="../html/assignment13.html">Assignment 13</a>
+                <a class="dropdown-item" href="../html/assignment14.html">Assignment 14</a>
+                <a class="dropdown-item" href="../html/assignment15.html">Assignment 15</a>
               </div>
             </li>
           </ul>
@@ -91,7 +91,7 @@
       <div class="row" id="cen-row">
         <!-- Left Column Start -->
         <div class="col-3" id="left">
-          <img src="./img/butterfly.jpg" width="100%" class="rounded" alt="Butterfly">
+          <img src="../img/butterfly.jpg" width="100%" class="rounded" alt="Butterfly">
           <div class="jumbotron" id="output">
             <label><h6>X &amp; Y values</h6></label>
             <div id="output-range"> </div><br>
@@ -159,10 +159,10 @@
                 <h3>Curve Calculator</h3><br>
                 <h6>Parameteric equations:</h6><br>
                 <div class="equations">
-                  <img src="./img/equation1.svg" width="100%" class="rounded" alt="equation1"><br>
-                  <img src="./img/equation2.svg" width="100%" class="rounded" alt="equation2"><br><br>
+                  <img src="../img/equation1.svg" width="100%" class="rounded" alt="equation1"><br>
+                  <img src="../img/equation2.svg" width="100%" class="rounded" alt="equation2"><br><br>
                 </div><h6>Range: </h6>
-                <img src="./img/range.svg" width="30%" class="rounded" alt="range"><br><br/>
+                <img src="../img/range.svg" width="30%" class="rounded" alt="range"><br><br/>
                 <h6>Move the Slider to select minimum and maximum values for the range.</h6><br>
                 <label for="minRange">Minimum</label>
                 <input type="range" id="minRange" min="-100" max="0" value="-10" step="1" oninput="minUpdate(value)">
